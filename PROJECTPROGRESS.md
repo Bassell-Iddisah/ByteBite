@@ -7,27 +7,27 @@
 
 
  - #### Phase 1: Discovery Server (discovery-server)
-Initialize Spring Boot project (Eureka Server, Spring Web)
+Initialize Spring Boot project (Eureka Server, Spring Web) ✔
 
-Add @EnableEurekaServer
+Add @EnableEurekaServer ✔
 
-Setup application.yml with port and instance config
+Setup application.properties with port and instance config ✔
 
-Test by launching and visiting Eureka dashboard
+Test by launching and visiting Eureka dashboard ✔
 
  - #### Phase 2: Config Server (config-server)
-Initialize Spring Boot project (Config Server, Git config)
+Initialize Spring Boot project (Config Server, Git config) ✔
 
-Create local Git repo for config files
+Create local Git repo for config files ✔
 
-Setup application.yml to point to Git config
+Setup application.properties to point to Git config ✔
 
-Add sample config (e.g for auth-service) in Git repo
+Add sample config (e.g for auth-service) in Git repo ✔
 
-Test config server loads remote configs
+Test config server loads remote configs ✔
 
 - #### Phase 3: API Gateway (api-gateway)
-Initialize Spring Boot project (Gateway, Eureka Client)
+Initialize Spring Boot project (Gateway, Eureka Client) ✔
 
 Setup route to test service (e.g. /auth/**)
 
