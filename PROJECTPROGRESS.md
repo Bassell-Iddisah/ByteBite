@@ -48,13 +48,13 @@ Add BCrypt password encoding and user registration logic
 Test registration with Postman
 
 - #### Phase 2: JWT Login & Token Issuance
-Add JWT utility class (generate + validate tokens)
+Add JWT utility class (generate + validate tokens) ✔
 
-Setup login controller (authenticate & return token)
+Setup login controller (authenticate & return token) ✔
 
 Add roles to JWT claims
 
-Test login and inspect returned JWT in Postman
+Test login and inspect returned JWT in Postman ✔
 
 - #### Phase 3: Role Setup & Admin Seeding
 Define roles: ROLE_CUSTOMER, ROLE_RESTAURANT_OWNER, ROLE_ADMIN
