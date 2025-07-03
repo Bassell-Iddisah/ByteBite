@@ -18,6 +18,11 @@ public class AuthController {
         return "Successful registration!!!";
     }
 
+    @PostMapping("/login")
+    public String login(@RequestBody RegisterRequest request) {
+        return authService.login(request.getEmail(), request.getPassword());
+    }
+
     @Data
     static class RegisterRequest {
         private String email;

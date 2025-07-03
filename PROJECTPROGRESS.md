@@ -31,12 +31,12 @@ Initialize Spring Boot project (Gateway, Eureka Client) ✔
 
 Setup route to test service (e.g. /auth/**)
 
-Add JWT validation filter (placeholder)
+Add JWT validation filter (placeholder) ✔
 
-Test request routing through gateway
+Test request routing through gateway ✔
 
 ## Authentication Flow (auth-service)
-Handles login, registration, JWT creation, and user role logic
+Handles login, registration, JWT creation, and user role logic ✔
 
 - #### Phase 1: Basic User Management
 Initialize auth-service with Spring Security, JPA, Web, Config Client, Eureka Client
