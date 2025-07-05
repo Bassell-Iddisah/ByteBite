@@ -39,24 +39,24 @@ Test request routing through gateway ✔
 Handles login, registration, JWT creation, and user role logic ✔
 
 - #### Phase 1: Basic User Management
-Initialize auth-service with Spring Security, JPA, Web, Config Client, Eureka Client ✔
+Initialize auth-service with Spring Security, JPA, Web, Config Client, Eureka Client
 
 Create User entity, DTOs, repository
 
-Add BCrypt password encoding and user registration logic ✔
+Add BCrypt password encoding and user registration logic
 
-Test registration with Postman ✔
+Test registration with Postman
 
-- #### Phase 2: JWT Login & Token Issuance ✔
+- #### Phase 2: JWT Login & Token Issuance
 Add JWT utility class (generate + validate tokens) ✔
 
 Setup login controller (authenticate & return token) ✔
 
-Add roles to JWT claims ✔
+Add roles to JWT claims
 
 Test login and inspect returned JWT in Postman ✔
 
-- #### Phase 3: Role Setup & Admin Seeding ✔
+- #### Phase 3: Role Setup & Admin Seeding
 Define roles: ROLE_CUSTOMER, ROLE_RESTAURANT_OWNER, ROLE_ADMIN
 
 Preload an admin user with ROLE_ADMIN
