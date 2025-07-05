@@ -22,7 +22,7 @@ public class DataSeeder implements CommandLineRunner {
             User admin = User.builder()
                     .email("admin@bytebites.com")
                     .password(passwordEncoder.encode("admin123"))
-                    .roles(Set.of("ROLE_ADMIN"))
+                    .roles(Set.of("ROLE_ADMIN", "ROLE_RESTAURANT_OWNER"))
                     .build();
 
             userRepository.save(admin);
