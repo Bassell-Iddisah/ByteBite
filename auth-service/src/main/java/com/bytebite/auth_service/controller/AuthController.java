@@ -12,6 +12,11 @@ public class AuthController {
 
     private final AuthService authService;
 
+    @GetMapping("/home")
+    public String auth_home() {
+        return "Welcome to Auth Service!!!";
+    }
+
     @PostMapping("/register")
     public String register(@RequestBody RegisterRequest request) {
         authService.register(request.getEmail(), request.getPassword());

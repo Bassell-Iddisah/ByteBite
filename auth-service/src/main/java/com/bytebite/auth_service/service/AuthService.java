@@ -9,6 +9,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -22,7 +23,7 @@ public class AuthService {
         User user = User.builder()
                 .email(email)
                 .password(hashed)
-                .roles(Collections.singleton("ROLE_CUSTOMER"))
+                .roles(Set.of("ROLE_CUSTOMER", "ROLE_RESTAURANT_OWNER"))
                 .build();
         userRepository.save(user);
     }
