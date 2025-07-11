@@ -49,18 +49,17 @@ ByteBites is a microservices-based platform that connects customers with local r
 ### Core Services
 | Service | Description | Port Range |
 |---------|------------|------------|
-| auth-service | Handles authentication & JWT generation | 8000-8009 |
-| restaurant-service | Manages restaurant data & menus | 8010-8019 |
-| order-service | Processes customer orders | 8020-8029 |
-| notification-service | Handles email/SMS notifications | 8030-8039 |
-| gateway-service | API Gateway (Spring Cloud Gateway) | 8040-8049 |
+| auth-service | Handles authentication & JWT generation | 8081       |
+| restaurant-service | Manages restaurant data & menus | 8082       |
+| order-service | Processes customer orders | 8083       |
+| notification-service | Handles email/SMS notifications | 8084       |
+| gateway-service | API Gateway (Spring Cloud Gateway) | 8080       |
 
 ### Supporting Services
 | Service | Description | Port Range |
 |---------|------------|------------|
 | config-server | Centralized configuration | 8888 |
 | discovery-server | Eureka service registry | 8761 |
-| kafka/zookeeper | Event streaming | 9092/2181 |
 
 ---
 
@@ -74,7 +73,7 @@ ByteBites is a microservices-based platform that connects customers with local r
 
 ### Local Development
 1. Clone the repository:
-   git clone https://github.com/yourorg/bytebites.git
+   git clone https://github.com/Bassell-Iddisah/bytebites.git
    cd bytebites
 
 2. Start infrastructure services:
@@ -147,19 +146,6 @@ Postman collection available in /docs directory.
 ### Docker
 docker-compose -f docker-compose.yml up -d --build
 
-### Kubernetes
-kubectl apply -f k8s/
-
-### CI/CD
-GitHub Actions workflows provided for:
-- Build & test on PR
-- Docker image build on main
-- Helm chart deployment to staging/prod
-
----
-
-## Monitoring & Logging
-
 ### Health Checks
 All services expose actuator endpoints:
 /actuator/health
@@ -173,17 +159,3 @@ All services expose actuator endpoints:
 ### Monitoring
 - Prometheus + Grafana dashboards
 - AlertManager for critical issues
-
----
-
-## Contributing
-1. Fork the repository
-2. Create your feature branch (git checkout -b feature/foo)
-3. Commit your changes (git commit -am 'Add some foo')
-4. Push to the branch (git push origin feature/foo)
-5. Create a new Pull Request
-
----
-
-## License
-Distributed under the MIT License. See LICENSE for more information.
